@@ -7,7 +7,7 @@ from ..config import settings
 # Gemini implementation is preserved below as a commented block for easy rollback.
 
 _IMAGE_MODEL = "gpt-image-2"
-# Cheaper alternative — swap model name only: "gpt-image-1-mini"
+# Cheaper alternative — swap model name only: "dall-e-2"
 
 _STYLE_DIRECTIVES: dict[str, str] = {
     "photoreal": "professional photography, natural lighting, shallow depth of field",
