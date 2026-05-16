@@ -58,7 +58,6 @@ async def generate_image(topic: str, tone: str, content_type: str, style: str = 
                     model=_IMAGE_MODEL,
                     prompt=prompt,
                     size="1024x1024",
-                    response_format="b64_json",
                 ),
             )
             return base64.b64decode(result.data[0].b64_json)

@@ -186,7 +186,7 @@ def main():
             f"{BASE_URL}/api/generate/image",
             json={"generation_id": gen_ids["blog_post"], "style": "photoreal"},
             headers=H,
-            timeout=60,
+            timeout=120,
         )
         data = check("POST /generate/image (style=photoreal)", r)
         if data:
@@ -196,7 +196,7 @@ def main():
             f"{BASE_URL}/api/generate/image",
             json={"generation_id": gen_ids["blog_post"], "style": "illustration"},
             headers=H,
-            timeout=60,
+            timeout=120,
         )
         data = check("POST /generate/image (style=illustration, regen)", r)
         if data:
